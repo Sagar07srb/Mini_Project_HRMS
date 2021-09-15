@@ -9,6 +9,7 @@ public class HRM {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		
 		DAOclass dc1 = new DAOclass();
 		dc1.myConn();
 		String a;
@@ -22,10 +23,10 @@ public class HRM {
 
 			System.out.println("5.Show list of employees for given department");
 			System.out.println("6.Department wise employee count");
-			Scanner keyboard = new Scanner(System.in);
+			Scanner s = new Scanner(System.in);
 			System.out.println("enter your choice::");
-			int ch = keyboard.nextInt();
-
+			int ch = s.nextInt();
+			
 			switch (ch) {
 			case 1:
 				dc1.addEmployee();
@@ -47,9 +48,13 @@ public class HRM {
 
 			case 6:
 				dc1.countdeptWise();
+				break;
 			}
 			System.out.println("do you want to continue.....enter yes/no");
 			a = sc.nextLine();
+			
 		} while (a.equals("yes"));
+		
 	}
+	
 }

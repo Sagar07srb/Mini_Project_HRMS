@@ -144,8 +144,6 @@ public class DAOclass {
 	}
 
 	public void myConn() {
-		Scanner sc = new Scanner(System.in);
-		ResultSet rs = null;
 
 		try {
 
@@ -159,11 +157,11 @@ public class DAOclass {
 			c = DriverManager.getConnection(url, username, password);
 
 			System.out.println("Successfully Login...Now You Can Perform Following Tasks!!!!! ");
-
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
+		
 	}
 
 	public void myClose() {

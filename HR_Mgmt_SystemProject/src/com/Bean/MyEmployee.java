@@ -91,7 +91,7 @@ public class MyEmployee {
 	}
 
 	public void checkFname() {
-		Scanner sc = new Scanner(System.in);
+		
 		System.out.println("Enter First name:");
 		String name = sc.next();
 		if (this.validateName(name))
