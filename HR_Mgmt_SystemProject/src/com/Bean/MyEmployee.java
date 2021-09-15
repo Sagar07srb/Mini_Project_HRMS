@@ -59,14 +59,7 @@ public class MyEmployee {
 
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
-//		if(phoneValidation(mobile))
-//		{
-//			this.mobile=mobile;
-//		}
-//		else {
-//			System.out.println("Invalid mobile_no....");
-//		}
-//		
+		
 	}
 
 	public String getEmail() {
