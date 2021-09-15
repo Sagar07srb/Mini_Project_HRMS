@@ -60,9 +60,9 @@ public class DAOclass {
 				System.out.println(("salary::" + rs.getInt(3)));
 				System.out.println("join_date::" + rs.getString(4));
 				System.out.println("location::" + rs.getString(5));
-				System.out.println("mobile::" + rs.getString(6));
-				System.out.println("email::" + rs.getString(7));
-				System.out.println("Role::" + rs.getString(8));
+				System.out.println("mobile::" + rs.getString(7));
+				System.out.println("email::" + rs.getString(8));
+				System.out.println("Role::" + rs.getString(9));
 
 			}
 
