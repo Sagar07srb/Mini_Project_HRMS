@@ -1,7 +1,6 @@
 package com.Controller;
 
 import java.util.*;
-
 import com.DAO.DAOclass;
 
 public class HRM {
@@ -21,6 +20,8 @@ public class HRM {
 			System.out.println("3.Update Employee Details");
 			System.out.println("4.Search Employee by name/id/department");
 
+			System.out.println("5.Show list of employees for given department");
+			System.out.println("6.Department wise employee count");
 			Scanner keyboard = new Scanner(System.in);
 			System.out.println("enter your choice::");
 			int ch = keyboard.nextInt();
@@ -39,8 +40,15 @@ public class HRM {
 			case 4:
 				dc1.mySearch();
 				break;
+
+			case 5:
+				dc1.listofEmp();
+				break;
+
+			case 6:
+				dc1.countdeptWise();
 			}
-			System.out.println("do you want to continue.....enter y/n");
+			System.out.println("do you want to continue.....enter yes/no");
 			a = sc.nextLine();
 		} while (a.equals("yes"));
 	}
